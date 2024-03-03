@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Age Calculator</title>
+    
+    <style>
+        .max-w-sm {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .flex {
+            display: flex;
+        }
+        .justify-center {
+            justify-content: center;
+        }
+        .items-center {
+            align-items: center;
+        }
+        .h-screen {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex justify-center items-center h-screen">
+        <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <a href="#">
+                <img class="rounded-t-lg" src="./images/ageCalculator.png" alt="" />
+            </a>
+            <div class="p-5 justify-center items-center flex flex-col">
+                <a href="#">
+                    <h5 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Age Calculator</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> Enter Your Birthdate Below</p>
+                <input class= " mb-3 rounded-lg shadow w-[80%] text-center" type="date" id="getDate">
+                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onclick="findAge()">
+                    FIND OUT
+                </a>
+                <p class="mb-1 text-xl tracking-tight text-gray-900 dark:text-white" id="ageChange"> Your Age is : 20</p>
+            </div>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
